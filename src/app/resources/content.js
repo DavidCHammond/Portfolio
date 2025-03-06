@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "David",
+  lastName: "Hammond",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Software Engineer",
+  avatar: "/images/avatar.png",
+  location: "Brooklyn, New York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -29,37 +29,34 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/DavidCHammond",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/david-hammond-c/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:hammond.david.c@gmail.com",
+  },
+  {
+  name: "Sketchfab",
+  icon: "sketchfab",
+  link: "https://sketchfab.com/hammond.david.c",
+  },
+  {
+    name: "Youtube",
+    icon: "youtube",
+    link: "https://www.youtube.com/@davidhammond6933",
+  },
+  {
+    name: "Itch.io",
+    icon: "itch",
+    link: "https://davidhammond.itch.io/",
   },
 ];
-
-const home = {
-  label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
-  subline: (
-    <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
-    </>
-  ),
-};
 
 const about = {
   label: "About",
@@ -81,9 +78,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a Brooklyn-based software engineer versed in Game Development and Web App Development with Full Stack experience
+        accross multiple robotics companies.  At Refraction AI I built a complex simulator from the ground up, working on both
+        Front-End and Back-End development.  At Serve Robotics I modeled the 3D scenes for their simulator built in 
+        NVIDIA's Isaac Sim.  Alongside modeling I also wrote python scripts many actors in the scene bringing the virtual world to life.
       </>
     ),
   },
@@ -92,41 +90,97 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Serve Robotics",
+        timeframe: "2024 - 2025",
+        role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developing new assets to make 1:1 recreations of 
+            Los Angeles city areas using Blender and the Omniverse 
+            Platform referencing OSM and Point Cloud data.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Optimizing workflow and implementing best practices while 
+            working on large USD projects in a collaborative environment.
           </>,
+          <>
+            Creating actor scripts using the NVIDIA Isaac Sim Python API to bring the simulated world to life.
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Refraction AI",
+        timeframe: "2023 - 2024",
+        role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led the design and development of a new training simulator, enabling parallel training of multiple operators, reducing 
+            training time by over 50%. Successfully trained 10+ new operators simultaneously, improving efficiency from 1 operator to 
+            3-4 operators trained at a time.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed the client side using Python, C++, QML, Uvicorn, and NiceGUI, and built the server using Unreal Engine and 
+            Carla, seamlessly integrating with the existing teleoperation environment.
+          </>,
+          <>
+            Designed and implemented a versioning system with 
+            developer-friendly tools to streamline iteration and testing.
+          </>,
+          <>
+            Conducted demonstrations and training sessions to showcase new features and updates to operators.
+          </>,
+          <>
+            Integrated CI/CD pipelines, managed pull requests, performed code reviews, and led load/stress testing.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "Refraction AI",
+        timeframe: "2023 - 2023",
+        role: "Software Engineer Intern",
+        achievements: [
+          <>
+            Created a prototype for a training simulator for new robot operators.
+          </>,
+          <>
+            Created custom slack bots to assist in company organization and improve our workflow for operations.
+          </>,
+          <>
+            Participated in engineering standup meetings, sharing feedback 
+            and demonstrating new features I implemented in my projects.
+          </>,
+          <>
+            Designed and implemented a new touchscreen user interface across a fleet of 20+ robots that improved customer   
+            experience and ease of use.  Also using webhooks to open the robot's side door remotely and receive signals letting
+            operators know the door is locked as well.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Refraction AI",
+        timeframe: "2022 - 2023",
+        role: "Operations Supervisor/Training Lead",
+        achievements: [
+          <>
+            Managed and assisted 10+ employees across multiple locations at the same time.
+          </>,
+          <>
+            Addressed mechanical and employee issues on a daily basis, 
+            in addition to ensuring that operations ran smoothly.
+          </>,
+          <>
+            Constantly maintained contact with our different teams across the country, 
+            via slack huddles and google meetings, to 
+            ensure that we would have a fix to any problem that came up.
+          </>,
+          <>
+            Assisted in the creation of a new training curriculum for new hires, 
+            and trained 20+ employees with that new curriculum.
           </>,
         ],
         images: [],
@@ -138,148 +192,78 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Texas San Antonio",
+        description: <>Studied Computer Science, decided not to finish and pursue engineering roles since I had the chance.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Texas Arlington",
+        description: <>Studied nursing, but transfered to San Antonio to pursue a Computer Science degree.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Unreal Engine",
+        description: <>I have built multiple complex simulators in my time at Refraction AI, 
+        as well as personal small games using Unreal Engine 4/5.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "NVIDIA Omniverse",
+        description: <>At Serve Robotics I used Isaac Sim and USD Composer to 
+        construct a large 3D scene that was used to train their AI model!</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
+      {
+        title: "Blender",
+        description: <>At both Refraction AI and Serve Robotics I made many models including 
+        robots, street lights, sidewalks, roads, buildings, billboards, etc.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Python",
+        description: <>For both simulators I have worked on I have used 
+        Python for the Back-End.  I also have experience using
+        libraries like NiceGUI for Front-End work.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "C++",
+        description: <>Experience working on C++ code at Refraction AI including 
+        video encoding, robot control, and robot telemetry.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "QML",
+        description: <>I added to the QML programs at Refraction when integrating
+         the simulator into the teleoperations platform.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Unity/C#",
+        description: <>I have been using Unity alongside C# for 8 years now, and have published a full game!</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Javascript, React, Next.js",
+        description: <>My time at Refraction AI I used Javascript to create 
+        docs that could be accessed within the simulator(e.g. Patch Notes and How To Guides).
+        This site was also made using React and Next.js!</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      }
     ],
   },
 };
 
-const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
-};
-
-const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
-};
-
-const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, about };

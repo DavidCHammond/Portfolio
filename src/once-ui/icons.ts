@@ -33,6 +33,12 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
+import { 
+  SiSketchfab,
+  SiYoutube,
+  SiItchdotio,
+} from "react-icons/si";
+
 import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
@@ -67,4 +73,7 @@ export const iconLibrary: Record<string, IconType> = {
   x: FaXTwitter,
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
+  sketchfab: SiSketchfab,
+  youtube: SiYoutube,
+  itch: SiItchdotio,
 };

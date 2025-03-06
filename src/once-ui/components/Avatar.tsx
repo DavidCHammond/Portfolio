@@ -35,7 +35,7 @@ const statusIndicatorSizeMapping: Record<"xs" | "s" | "m" | "l" | "xl", "s" | "m
 };
 
 const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
-  ({ size = "m", value, src, loading, empty, statusIndicator, className, style, ...rest }, ref) => {
+  ({ size = "xl", value, src, loading, empty, statusIndicator, className, style, ...rest }, ref) => {
     const isEmpty = empty || (!src && !value);
 
     if (value && src) {
@@ -75,10 +75,8 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
           <SmartImage
             radius="full"
             src={src}
-            fill
             alt="Avatar"
-            sizes={`${sizeMapping[size]}px`}
-            className={styles.image}
+            aspectRatio="2/3"
           />
         );
       }
@@ -106,7 +104,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
         role="img"
         position="relative"
         horizontal="center"
-        vertical="center"
+        vertical="start"
         radius="full"
         border="neutral-strong"
         background="surface"
