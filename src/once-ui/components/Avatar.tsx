@@ -76,7 +76,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
             radius="full"
             src={src}
             alt="Avatar"
-            aspectRatio="2/3"
+            aspectRatio="1/1"
           />
         );
       }

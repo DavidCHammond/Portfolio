@@ -149,7 +149,7 @@ export default function About() {
               {person.role}
             </Text>
             {social.length > 0 && (
-              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
+              <Flex className={styles.blockAlign} paddingTop="40" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
                 {social.map(
                   (item) =>
                     item.link && (
