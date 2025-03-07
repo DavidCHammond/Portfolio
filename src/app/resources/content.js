@@ -261,7 +261,14 @@ const about = {
         This site was also made using React and Next.js!</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
-      }
+      },
+      {
+        title: "AWS, Balena, Docker, Git",
+        description: <>Across all my engineering roles I have used these services as part of the development
+        ecosystems and I am very familiar with them!</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
     ],
   },
 };
