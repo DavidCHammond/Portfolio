@@ -79,7 +79,7 @@ const about = {
     description: (
       <>
         I am a Brooklyn-based software engineer versed in Game Development and Web App Development with Full Stack experience
-        accross multiple robotics companies.  At Refraction AI I built a complex simulator from the ground up, working on both
+        across multiple robotics companies.  At Refraction AI I built a complex simulator from the ground up, working on both
         Front-End and Back-End development.  At Serve Robotics I modeled the 3D scenes for their simulator built in 
         NVIDIA's Isaac Sim.  Alongside modeling I also wrote python scripts many actors in the scene bringing the virtual world to life.
       </>
